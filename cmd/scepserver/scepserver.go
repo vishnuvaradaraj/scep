@@ -23,11 +23,11 @@ import (
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
-	"github.com/micromdm/scep/csrverifier"
-	"github.com/micromdm/scep/csrverifier/executable"
-	"github.com/micromdm/scep/depot"
-	"github.com/micromdm/scep/depot/file"
-	"github.com/micromdm/scep/server"
+	"github.com/vishnuvaradaraj/scep/csrverifier"
+	"github.com/vishnuvaradaraj/scep/csrverifier/executable"
+	"github.com/vishnuvaradaraj/scep/depot"
+	"github.com/vishnuvaradaraj/scep/depot/file"
+	"github.com/vishnuvaradaraj/scep/server"
 )
 
 // version info

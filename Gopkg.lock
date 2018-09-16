@@ -2,81 +2,160 @@
 
 
 [[projects]]
+  digest = "1:ed112122ed4a920d944cc99b9d00b0441c11685939c28462c719488d36fe29aa"
   name = "github.com/boltdb/bolt"
   packages = ["."]
+  pruneopts = ""
   revision = "2f1ce7a837dcb8da3ec595b1dac9d0632f0f99e8"
   version = "v1.3.1"
 
 [[projects]]
   branch = "sha256"
+  digest = "1:61107ada6ae353be1cb1c34541e1c4922d59679666186a533742cc889b648036"
   name = "github.com/fullsailor/pkcs7"
-  packages = [".","internal/x509util"]
+  packages = [
+    ".",
+    "internal/x509util",
+  ]
+  pruneopts = ""
   revision = "43549d8ee32d0e4f67d7536b6356db5ba49a6378"
-  source = "git@github.com:groob/pkcs7"
+  source = "github.com/groob/pkcs7"
 
 [[projects]]
+  digest = "1:abc21618714d601a4d8f15c0229f1643ba991df033672bf0e50b2d514e3d365c"
   name = "github.com/go-kit/kit"
-  packages = ["endpoint","log","transport/http"]
+  packages = [
+    "endpoint",
+    "log",
+    "log/level",
+    "transport/http",
+  ]
+  pruneopts = ""
   revision = "fadad6fffe0466b19df9efd9acde5c9a52df5fa4"
   version = "v0.4.0"
 
 [[projects]]
+  digest = "1:6a4a01d58b227c4b6b11111b9f172ec5c17682b82724e58e6daf3f19f4faccd8"
   name = "github.com/go-logfmt/logfmt"
   packages = ["."]
+  pruneopts = ""
   revision = "390ab7935ee28ec6b286364bba9b4dd6410cb3d5"
   version = "v0.3.0"
 
 [[projects]]
+  digest = "1:996761b4652a3dec771aa335202ed1f257206f94d05519b6babffdeaf87dc7e6"
   name = "github.com/go-stack/stack"
   packages = ["."]
+  pruneopts = ""
   revision = "817915b46b97fd7bb80e8ab6b69f01a53ac3eebf"
   version = "v1.6.0"
 
 [[projects]]
+  digest = "1:20ed7daa9b3b38b6d1d39b48ab3fd31122be5419461470d0c28de3e121c93ecf"
   name = "github.com/gorilla/context"
   packages = ["."]
+  pruneopts = ""
   revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
   version = "v1.1"
 
 [[projects]]
+  digest = "1:783fde5796ef54ba05de240f2529b6c9fbabc541e70ea43585c53b3f1bbabb5b"
   name = "github.com/gorilla/mux"
   packages = ["."]
+  pruneopts = ""
   revision = "bcd8bc72b08df0f70df986b97f95590779502d31"
   version = "v1.4.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:81927b16db0e4c8ad868af18e9afa8dfb05aa847801ba00f301a2f8e9f099752"
   name = "github.com/groob/finalizer"
-  packages = [".","logutil"]
+  packages = [
+    ".",
+    "logutil",
+  ]
+  pruneopts = ""
   revision = "4c2ed49aabdaa038f247d72d183e410757cdbe9c"
 
 [[projects]]
   branch = "master"
+  digest = "1:1ed9eeebdf24aadfbca57eb50e6455bd1d2474525e0f0d4454de8c8e9bc7ee9a"
   name = "github.com/kr/logfmt"
   packages = ["."]
+  pruneopts = ""
   revision = "b84e30acd515aadc4b783ad4ff83aff3299bdfe0"
 
 [[projects]]
+  branch = "master"
+  digest = "1:683b4c5538c6eaae2a150bd10a1d6f7cc85eca32f051a815fb1934042cc9550e"
+  name = "github.com/micromdm/scep"
+  packages = [
+    "challenge",
+    "challenge/bolt",
+    "client",
+    "crypto/x509util",
+    "csrverifier",
+    "csrverifier/executable",
+    "depot",
+    "depot/bolt",
+    "depot/file",
+    "scep",
+    "server",
+  ]
+  pruneopts = ""
+  revision = "a136542b4bc9312ba88f1beaf1369d67bc744614"
+
+[[projects]]
+  digest = "1:7365acd48986e205ccb8652cc746f09c8b7876030d53710ea6ef7d0bd0dcd7ca"
   name = "github.com/pkg/errors"
   packages = ["."]
+  pruneopts = ""
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:47fe18b32059189c0dba9b4cd334187dcf4ca84189ab403217a559869c58464e"
   name = "golang.org/x/net"
-  packages = ["context","context/ctxhttp"]
+  packages = [
+    "context",
+    "context/ctxhttp",
+  ]
+  pruneopts = ""
   revision = "f5079bd7f6f74e23c4d65efa0f4ce14cbd6a3c0f"
 
 [[projects]]
   branch = "master"
+  digest = "1:b3df4ea9783c069e75397aa181d682b4b4db4dbf382d34825d4f72755917fbf4"
   name = "golang.org/x/sys"
   packages = ["unix"]
+  pruneopts = ""
   revision = "0f826bdd13b500be0f1d4004938ad978fcc6031e"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "4bf6820df828baf8cac19af2b49ad79e752d4c4b9437fbfa91e5ffc9efca25ef"
+  input-imports = [
+    "github.com/boltdb/bolt",
+    "github.com/fullsailor/pkcs7",
+    "github.com/go-kit/kit/endpoint",
+    "github.com/go-kit/kit/log",
+    "github.com/go-kit/kit/log/level",
+    "github.com/go-kit/kit/transport/http",
+    "github.com/gorilla/mux",
+    "github.com/groob/finalizer/logutil",
+    "github.com/micromdm/scep/challenge",
+    "github.com/micromdm/scep/challenge/bolt",
+    "github.com/micromdm/scep/client",
+    "github.com/micromdm/scep/crypto/x509util",
+    "github.com/micromdm/scep/csrverifier",
+    "github.com/micromdm/scep/csrverifier/executable",
+    "github.com/micromdm/scep/depot",
+    "github.com/micromdm/scep/depot/bolt",
+    "github.com/micromdm/scep/depot/file",
+    "github.com/micromdm/scep/scep",
+    "github.com/micromdm/scep/server",
+    "github.com/pkg/errors",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

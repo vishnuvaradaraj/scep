@@ -8,7 +8,7 @@ To compile the SCEP client and server, there are a few requirements.
 * You must have a Go compiler. The compiler is normally in the `golang` package.
 * You must have a shell variable set for $GOPATH. This is a directory used by the Go compiler and utilities for all Go projects.
 
-1. Once all of those are set, clone the repository with `go get github.com/micromdm/scep`
+1. Once all of those are set, clone the repository with `go get github.com/vishnuvaradaraj/scep`
 2. Install dependencies:
     `make deps`
 3. Compile the server and client binaries: 
@@ -142,10 +142,10 @@ docker run -it --rm -v /path/to/ca/folder:/depot -p 8080:8080 micromdm/scep:late
 # SCEP library
 
 ```
-go get github.com/micromdm/scep/scep
+go get github.com/vishnuvaradaraj/scep/scep
 ```
 
-For detailed usage, see [godoc](https://godoc.org/github.com/micromdm/scep/scep) 
+For detailed usage, see [godoc](https://godoc.org/github.com/vishnuvaradaraj/scep/scep) 
 
 Example:
 ```

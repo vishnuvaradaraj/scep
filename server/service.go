@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/go-kit/kit/log"
-	"github.com/micromdm/scep/challenge"
-	"github.com/micromdm/scep/csrverifier"
-	"github.com/micromdm/scep/depot"
-	"github.com/micromdm/scep/scep"
+	"github.com/vishnuvaradaraj/scep/challenge"
+	"github.com/vishnuvaradaraj/scep/csrverifier"
+	"github.com/vishnuvaradaraj/scep/depot"
+	"github.com/vishnuvaradaraj/scep/scep"
 )
 
 // Service is the interface for all supported SCEP server operations.

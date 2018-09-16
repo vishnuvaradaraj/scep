@@ -17,9 +17,9 @@ import (
 
 	kitlog "github.com/go-kit/kit/log"
 
-	"github.com/micromdm/scep/depot"
-	filedepot "github.com/micromdm/scep/depot/file"
-	scepserver "github.com/micromdm/scep/server"
+	"github.com/vishnuvaradaraj/scep/depot"
+	filedepot "github.com/vishnuvaradaraj/scep/depot/file"
+	scepserver "github.com/vishnuvaradaraj/scep/server"
 )
 
 func TestCACaps(t *testing.T) {
